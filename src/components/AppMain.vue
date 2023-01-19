@@ -21,28 +21,24 @@ export default {
                     console.log(response.data);
                     this.projects = response.data;
                     this.loading = false;
-
-
                 })
                 .catch(error => {
                     console.error(error.message);
                     this.loading = false;
                     this.error = error.message;
-
                 });
         },
         getImg(path) {
             if (path) {
                 return this.api_url + '/storage/' + path
             }
-
+            return '/src/assets/img/images.png';
         }
     },
     mounted() {
         this.getProjects(this.api_url + '/api/projects');
     }
 }
-
 </script>
 
 
@@ -71,7 +67,7 @@ export default {
 
                                 <div class="technologies">
                                     <strong>technologies: </strong>
-                                    <template v-if="project.technologies.lenght > 0">
+                                    <template v-if="project.technologies">
                                         <span v-for="technology in project.technologies">
                                             #{{ technology.name }}
                                         </span>
@@ -89,6 +85,7 @@ export default {
         </template>
     </section>
 </template>
+
 
 <style lang="scss" scoped>
 
