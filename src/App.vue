@@ -20,17 +20,16 @@ export default {
         getProjects(url) {
             axios.get(url)
                 .then(response => {
-                    console.log(response.data.results);
-                    this.projects = response.data.results;
+                    console.log(response.data);
+                    this.projects = response.data;
                     this.loading = false;
 
 
                 })
                 .catch(error => {
-                    console.error(error);
-                    this.error = error.message
+                    console.error(error.message);
                     this.loading = false;
-
+                    this.error = error.message;
 
                 });
         }
@@ -41,12 +40,13 @@ export default {
 }
 </script>
 
+
 <template>
     <section class="vue-home">
         <div class="container">
             <h1>All Projects</h1>
 
-            <div class="row">
+            <div class="row" v-if="!loading">
                 <div class="col-3" v-for="project in projects.data">
                     <img class="card-image" src="" alt="">
                     <div class="card-body">
