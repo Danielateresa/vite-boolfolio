@@ -61,42 +61,40 @@ export default {
 <template>
     <section class="vue-home">
         <div class="container py-5">
-            <h1>All Projects</h1>
+            <h2>All Projects</h2>
             <div class="container content pt-5">
-                <template v-if="!loading">
-                    <div v-if="projects">
-                        <div class="row gy-5">
-                            <div class="col-3" v-for="project in projects.data">
-                                <div class="card border-0 rounded-0 rounded-bottom">
-                                    <img class="card-image" :src="getImg(project.cover_img)" alt="">
-                                    <div class="card-body">
-                                        <h4>{{ project.title }}</h4>
-                                        <!-- <p>{{ trimDescription(project.description) }}</p> da rivedere-->
+                <template v-if="projects && !loading">
+                    <div class="row gy-5">
+                        <div class="col-3" v-for="project in projects.data">
+                            <div class="card border-0 rounded-0 rounded-bottom">
+                                <img class="card-image" :src="getImg(project.cover_img)" alt="">
+                                <div class="card-body">
+                                    <h4>{{ project.title }}</h4>
+                                    <!-- <p>{{ trimDescription(project.description) }}</p> da rivedere-->
+                                </div>
+                                <div class="card-footer">
+                                    <div class="type">
+                                        <strong>type: </strong>
+                                        <span v-if="project.type">
+                                            {{ project.type.name }}
+                                        </span>
+                                        <span v-else>no type</span>
                                     </div>
-                                    <div class="card-footer">
-                                        <div class="type">
-                                            <strong>type: </strong>
-                                            <span v-if="project.type">
-                                                {{ project.type.name }}
-                                            </span>
-                                            <span v-else>no type</span>
-                                        </div>
 
-                                        <div class="technologies">
-                                            <strong>technologies: </strong>
-                                            <template v-if="project.technologies.length > 0">
-                                                <span v-for="technology in project.technologies">
-                                                    #{{ technology.name }}
-                                                </span>
-                                            </template>
-                                            <template v-else>no technologies added</template>
-                                        </div>
+                                    <div class="technologies">
+                                        <strong>technologies: </strong>
+                                        <template v-if="project.technologies.length > 0">
+                                            <span v-for="technology in project.technologies">
+                                                #{{ technology.name }}
+                                            </span>
+                                        </template>
+                                        <template v-else>no technologies added</template>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div v-else>No Projects yet</div>
+
                     <nav class="d-flex justify-content-center pt-3" aria-label="Page navigation ">
                         <ul class="pagination">
                             <li class="page-item" v-if="projects.prev_page_url"
@@ -117,6 +115,11 @@ export default {
                         </ul>
                     </nav>
                 </template>
+                <template v-else-if="loading">
+                    <h3 class="text-muted">Loading page..</h3>
+                </template>
+                <template v-else>No Projects yet</template>
+
             </div>
 
         </div>
