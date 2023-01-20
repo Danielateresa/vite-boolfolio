@@ -1,2 +1,7 @@
 // Import all of Bootstrap's CSS
 @import "/node_modules/bootstrap/scss/bootstrap";
+
+h1 {
+    text-align: center;
+    padding-top: 1rem;
+}
