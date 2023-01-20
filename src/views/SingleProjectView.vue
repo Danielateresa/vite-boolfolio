@@ -46,7 +46,7 @@ export default {
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-6">
-                            <img class="card-image" :src="getImg(project.cover_img)" alt="">
+                            <img class="" :src="getImg(project.cover_img)" alt="">
                         </div>
                         <div class="col-6">
                             <p>{{ project.description }}</p>
@@ -83,5 +83,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+img {
+    width: 100%;
+}
 </style>
