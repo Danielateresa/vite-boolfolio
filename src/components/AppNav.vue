@@ -19,7 +19,7 @@ export default {
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <router-link class="nav-link active" :to="{ name: 'home' }" aria-current="page">Home <span
+                        <router-link class="nav-link" :to="{ name: 'home' }" aria-current="page">Home <span
                                 class="visually-hidden">(current)</span></router-link>
                     </li>
 

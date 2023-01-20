@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 export default {
-    name: 'AppMain',
+    name: 'ProjectList',
 
     data() {
         return {
@@ -90,6 +90,10 @@ export default {
                                         </template>
                                         <template v-else>no technologies added</template>
                                     </div>
+
+                                    <router-link class="nav-link fw-bold fs-6 text-muted pt-3"
+                                        :to="{ name: 'singleproject', params: { slug: project.slug } }">Show
+                                        project</router-link>
                                 </div>
                             </div>
                         </div>
