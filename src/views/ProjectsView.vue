@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container pb-5">
         <div>
             <h1>My projects</h1>
         </div>

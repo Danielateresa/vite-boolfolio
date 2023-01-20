@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 export default {
-    name: 'Prjectcard',
+    name: 'PrjectCard',
 
     data() {
         return {
@@ -120,6 +120,9 @@ export default {
     </template>
     <template v-else>No Projects yet</template>
 </template>
-<style lang="scss" scoped>
 
+<style lang="scss" scoped>
+.content {
+    max-width: 1000px;
+}
 </style>
