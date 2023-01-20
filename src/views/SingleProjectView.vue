@@ -13,10 +13,10 @@ export default {
         }
     },
     mounted() {
-        const url = this.api_url + '/api/project/' + this.$route.params.slug;
-        console.log(url);
+        const url = this.api_url + '/api/projects/' + this.$route.params.slug;
+        console.log(url, ' URL ');
 
-        axios.get('url')
+        axios.get(url)
             .then(response => {
                 if (response.data.success) { //se ottengo una risposta, quindi nei dati è presente success
                     this.project = response.data.results;
@@ -32,7 +32,7 @@ export default {
 <template>
     <div>
         <div class="container">
-            <h1>About me</h1>
+            <h1>Single project</h1>
             <div v-if="project">
                 <h2>{{ project.title }}</h2>
 

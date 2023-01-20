@@ -67,10 +67,13 @@ export default {
                     <div class="row gy-5">
                         <div class="col-3" v-for="project in projects.data">
                             <div class="card border-0 rounded-0 rounded-bottom">
+
                                 <img class="card-image" :src="getImg(project.cover_img)" alt="">
                                 <div class="card-body">
                                     <h4>{{ project.title }}</h4>
-                                    <!-- <p>{{ trimDescription(project.description) }}</p> da rivedere-->
+                                    <div v-if="project.description != null">
+                                        <p>{{ trimDescription(project.description ) }}</p>
+                                    </div>
                                 </div>
                                 <div class="card-footer">
                                     <div class="type">
