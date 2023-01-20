@@ -1,11 +1,13 @@
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
 import AppMain from './components/AppMain.vue'
+import AppNav from './components/AppNav.vue'
 
 
 export default {
     components: {
-        AppMain
+        AppMain,
+        AppNav,
     },
     data() {
         return {
@@ -20,7 +22,9 @@ export default {
 </script>
 
 <template>
+    <AppNav></AppNav>
     <AppMain></AppMain>
+
 </template>
 
 <style lang="scss">
