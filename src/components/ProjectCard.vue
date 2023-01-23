@@ -40,7 +40,7 @@ export default {
 
             <img class="card-image" :src="getImg(project.cover_img)" alt="">
             <div class="card-body">
-                <h4 class="text-muted">{{ project.title }}</h4>
+                <h4 class="title">{{ project.title }}</h4>
                 <div v-if="project.description != null">
                     <p>{{ trimDescription(project.description ) }}</p>
                 </div>
@@ -94,6 +94,10 @@ export default {
     &:hover {
         transform: scale(110%);
         transition: 0.5s;
+    }
+
+    .title {
+        color: #fd9c1e;
     }
 }
 </style>

@@ -42,9 +42,9 @@ export default {
 
 <template>
     <div>
+        <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Project details<span
+                class="text-danger">/&#62;</span></h1>
         <div class="container pt-3">
-            <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Project details<span
-                    class="text-danger">/&#62;</span></h1>
             <div v-if="project">
                 <h2>{{ project.title }}</h2>
                 <div class="container py-5">
