@@ -1,5 +1,5 @@
 <script>
-
+import axios from 'axios';
 import ProjectCard from './ProjectCard.vue'
 
 export default {
@@ -7,6 +7,40 @@ export default {
     components: {
         ProjectCard
     },
+    data() {
+        return {
+            projects: null,
+            api_url: 'http://localhost:8000',//link al mio server
+            loading: true,//di base la pagina carica sempre
+            error: null//possibilità di salvare un messaggio dentro error
+
+        }
+    },
+    methods: {
+        //chiamata ajax per ottenere tutti i post del db
+        getProjects(url) {
+            axios.get(url)
+                .then(response => {
+                    console.log(response.data.results);
+                    this.projects = response.data.results;
+                    this.loading = false;//il caricamento finisce dopo l'ottenimento dei dati
+                })
+                .catch(error => {
+                    console.error(error.message);
+                    this.loading = false;//il caricamento finisce in caso di errore
+                    this.error = error.message;
+                });
+        },
+        prevPage(url) {
+            this.getProjects(url)
+        },
+        nextPage(url) {
+            this.getProjects(url)
+        }
+    },
+    mounted() {
+        this.getProjects(this.api_url + '/api/projects');
+    }
 }
 </script>
 
@@ -16,13 +50,41 @@ export default {
         <div class="container pt-3">
             <h2>All Projects</h2>
             <div class="container content pt-5">
+                <template v-if="projects && !loading">
+                    <div class="row gy-5">
+                        <ProjectCard :project="project" v-for="project in projects.data" />
+                    </div>
 
+                    <nav class="d-flex justify-content-center pt-3" aria-label="Page navigation ">
+                        <ul class="pagination">
+                            <li class="page-item" v-if="projects.prev_page_url"
+                                @click="prevPage(projects.prev_page_url)">
+                                <a class="page-link" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active" aria-current="page"><a class="page-link" href="#">{{
+                                projects.current_page
+                            }}</a></li>
+                            <li class="page-item" v-if="projects.next_page_url"
+                                @click="nextPage(projects.next_page_url)">
+                                <a class="page-link" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- pagination -->
+                </template>
 
-                <ProjectCard></ProjectCard>
+                <template v-else-if="loading">
+                    <h3 class="text-muted">Loading page..</h3>
+                </template>
+                <!-- finchè non arriva una risposta dalla chiamata mostra un loading -->
 
-
+                <template v-else>No Projects yet</template>
+                <!-- se non ci sono progetti nel db -->
             </div>
-
         </div>
     </section>
 </template>

@@ -22,7 +22,7 @@ export default {
     },
     mounted() {
         const url = this.api_url + '/api/projects/' + this.$route.params.slug;
-        console.log(url, ' URL ');
+        console.log(url);
 
         axios.get(url)
             .then(response => {
