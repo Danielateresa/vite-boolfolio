@@ -1,22 +1,22 @@
 <script>
 import axios from 'axios';
+import { store } from '../store.js'
 
 export default {
-    name: 'PrjectCard',
+    name: 'ProjectCard',
     props: ['project'],
     data() {
         return {
+            store,
             projects: null,
-            api_url: 'http://localhost:8000',//link al mio server
             loading: true,//di base la pagina carica sempre
-            error: null//possibilità di salvare un messaggio dentro error
-
+            error: null,//possibilità di salvare un messaggio dentro error
         }
     },
     methods: {
         getImg(path) {
             if (path) {
-                return this.api_url + '/storage/' + path
+                return this.store.api_url + '/storage/' + path
             }
             return '/img/images.png';
         },

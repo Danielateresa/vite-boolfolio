@@ -1,27 +1,27 @@
 <script>
 import axios from 'axios'
+import { store } from '../store.js'
 
 export default {
     name: 'SingleProjectView',
     data() {
         return {
             project: null,
-            api_url: 'http://localhost:8000',
             loading: true,
-
+            store
 
         }
     },
     methods: {
         getImg(path) {
             if (path) {
-                return this.api_url + '/storage/' + path
+                return this.store.api_url + '/storage/' + path
             }
             return '/img/images.png';
         }
     },
     mounted() {
-        const url = this.api_url + '/api/projects/' + this.$route.params.slug;
+        const url = this.store.api_url + '/api/projects/' + this.$route.params.slug;
         console.log(url);
 
         axios.get(url)

@@ -1,6 +1,7 @@
 <script>
 import axios from 'axios';
 import ProjectCard from './ProjectCard.vue'
+import { store } from '../store.js'
 
 export default {
     name: 'ProjectList',
@@ -9,11 +10,10 @@ export default {
     },
     data() {
         return {
+            store,
             projects: null,
-            api_url: 'http://localhost:8000',//link al mio server
             loading: true,//di base la pagina carica sempre
-            error: null//possibilità di salvare un messaggio dentro error
-
+            error: null,//possibilità di salvare un messaggio dentro error
         }
     },
     methods: {
@@ -39,7 +39,7 @@ export default {
         }
     },
     mounted() {
-        this.getProjects(this.api_url + '/api/projects');
+        this.getProjects(this.store.api_url + '/api/projects');
     }
 }
 </script>
