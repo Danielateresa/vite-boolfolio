@@ -47,48 +47,43 @@ export default {
 
 <template>
     <section class="vue-home">
-        <div class="container pt-3">
-            <h2>All Projects</h2>
-            <div class="container content pt-5">
-                <template v-if="projects && !loading">
-                    <div class="row gy-5">
-                        <ProjectCard :project="project" v-for="project in projects.data" />
+        <div class="container content pt-5">
+            <template v-if="projects && !loading">
+                <div class="row gy-5">
+                    <ProjectCard :project="project" v-for="project in projects.data" />
+                </div>
+
+                <nav class="d-flex justify-content-center pt-5" aria-label="Page navigation ">
+                    <ul class="pagination">
+                        <li class="page-item" v-if="projects.prev_page_url" @click="prevPage(projects.prev_page_url)">
+                            <a class="page-link" aria-label="Previous">
+                                <span class="text-dark" aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active" aria-current="page"><a class="page-link bg-dark" href="#">{{
+                            projects.current_page
+                        }}</a></li>
+                        <li class="page-item" v-if="projects.next_page_url" @click="nextPage(projects.next_page_url)">
+                            <a class="page-link" aria-label="Next">
+                                <span class="text-dark" aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- pagination -->
+            </template>
+
+            <template v-else-if="loading">
+                <h3 class="text-muted text-center">
+                    <div class="spinner-border m-5" role="status">
+                        <span class="visually-hidden">Loading...</span>
                     </div>
+                </h3>
+            </template>
+            <!-- finchè non arriva una risposta dalla chiamata mostra un loading -->
 
-                    <nav class="d-flex justify-content-center pt-5" aria-label="Page navigation ">
-                        <ul class="pagination">
-                            <li class="page-item" v-if="projects.prev_page_url"
-                                @click="prevPage(projects.prev_page_url)">
-                                <a class="page-link" aria-label="Previous">
-                                    <span class="text-dark" aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item active" aria-current="page"><a class="page-link bg-dark" href="#">{{
-                                projects.current_page
-                            }}</a></li>
-                            <li class="page-item" v-if="projects.next_page_url"
-                                @click="nextPage(projects.next_page_url)">
-                                <a class="page-link" aria-label="Next">
-                                    <span class="text-dark" aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- pagination -->
-                </template>
-
-                <template v-else-if="loading">
-                    <h3 class="text-muted text-center">
-                        <div class="spinner-border m-5" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                    </h3>
-                </template>
-                <!-- finchè non arriva una risposta dalla chiamata mostra un loading -->
-
-                <template v-else>No Projects yet</template>
-                <!-- se non ci sono progetti nel db -->
-            </div>
+            <template v-else>No Projects yet</template>
+            <!-- se non ci sono progetti nel db -->
         </div>
     </section>
 </template>

@@ -1,11 +1,25 @@
 // Import all of Bootstrap's CSS
 @import "/node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Merriweather&family=Metal&family=Poppins:wght@200;400;600&family=Roboto:wght@700&display&family=Source+Code+Pro:wght@400;700&display=swap');
+
 
 body {
     background-color: rgba(0, 0, 0, 0.019);
+
+    h1 {
+        text-align: center;
+        padding-top: 1rem;
+        font-family: 'Source Code Pro', monospace;
+
+    }
 }
 
-h1 {
-    text-align: center;
-    padding-top: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: 'Roboto', sans-serif;
 }

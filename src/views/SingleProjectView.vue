@@ -43,7 +43,8 @@ export default {
 <template>
     <div>
         <div class="container pt-3">
-            <h1>Single project</h1>
+            <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Project details<span
+                    class="text-danger">/&#62;</span></h1>
             <div v-if="project">
                 <h2>{{ project.title }}</h2>
                 <div class="container py-5">
@@ -86,6 +87,11 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.row {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 img {
     width: 100%;
 }

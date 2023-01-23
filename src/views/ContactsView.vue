@@ -6,9 +6,10 @@ export default {
 </script>
 
 <template>
-    <div class="container">
 
-        <h1>Contact me</h1>
+    <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Contact me<span
+            class="text-danger">/&#62;</span></h1>
+    <div class="container pt-5">
 
         <p class="pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptatem suscipit sint?
             Impedit fuga
@@ -52,5 +53,10 @@ export default {
 <style lang="scss" scoped>
 .content {
     max-width: 1000px;
+}
+
+.row {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 </style>

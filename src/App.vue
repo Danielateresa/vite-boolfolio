@@ -1,5 +1,5 @@
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
+
 import AppNav from './components/AppNav.vue'
 
 

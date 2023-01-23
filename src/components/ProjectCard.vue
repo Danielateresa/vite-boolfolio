@@ -35,7 +35,7 @@ export default {
 </script>
 
 <template>
-    <div class="col-3">
+    <div class="col-xs-12 col-sm-6 col-lg-3">
         <div class="card border-0 rounded-0 rounded-bottom shadow-sm">
 
             <img class="card-image" :src="getImg(project.cover_img)" alt="">

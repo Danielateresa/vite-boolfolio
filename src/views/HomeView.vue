@@ -7,17 +7,36 @@ export default {
 
 <template>
 
-    <div class="container pb-5">
-        <h1>Home</h1>
-        <div class="jumbotron">
-            <h1 class="display-3">Jumbo heading</h1>
-            <p class="lead">Jumbo helper text</p>
-            <hr class="my-2">
-            <p>More info</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">look my projects</a>
-            </p>
+    <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Hi! I'm Daniela, web developer<span
+            class="text-danger">/&#62;</span></h1>
+    <div class="jumbotron">
+        <div class="container-large bg-white">
+            <div class="row px-5 pb-4">
+                <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center">
+                    <div class="">
+                        <h2 class="fw-bold text-uppercase display-3">Sites and web apps on all devices</h2>
+
+                        <small class="d-block">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vitae! Natus commodi quam
+                            soluta impedit officiis nulla totam libero distinctio expedita placeat ex earum.
+                        </small>
+
+                        <a class="btn btn-danger w-50 mt-5" href="Jumbo action link" role="button">Go to
+                            projects</a>
+                    </div>
+                </div>
+                <!-- sx_column -->
+
+                <div class="col-sm-12 col-md-8">
+                    <img class="img-fluid" src="../../public/img/Progetto senza titolo.png" alt="">
+                </div>
+                <!-- dx_column -->
+            </div>
         </div>
+    </div>
+
+    <div class="container py-5">
+
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, dolore corrupti! Molestias, ipsum
             magnam. Corrupti nobis at iure et repudiandae explicabo, iste in magnam maiores. Veritatis voluptas
@@ -39,5 +58,18 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+h1 {
+    font-size: 50px;
+}
 
+h2 {
+    text-align: left;
+    font-size: 60px;
+    color: #fd9c1e;
+}
+
+.row {
+    max-width: 1400px;
+    margin: 0 auto;
+}
 </style>
