@@ -29,6 +29,9 @@ export default {
                 if (response.data.success) { //se ottengo una risposta, quindi nei dati è presente success
                     this.project = response.data.results;
                     this.loading = false;
+                } else {
+                    //pagina not-found 404 nel caso in cui il progetto cercato non esista
+                    this.$router.push({ name: 'notfound' });
                 }
             }).catch(error => {
                 console.log(error);
