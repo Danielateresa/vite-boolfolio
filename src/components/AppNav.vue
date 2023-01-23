@@ -8,16 +8,16 @@ export default {
 
 <template>
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">Boolfolio</a>
+            <a class="navbar-brand text-uppercase" href="#">Portfolio</a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <ul class="navbar-nav text-uppercase ms-auto mt-2 mt-lg-0">
                     <li class="nav-item">
                         <router-link class="nav-link" :to="{ name: 'home' }" aria-current="page">Home <span
                                 class="visually-hidden">(current)</span></router-link>

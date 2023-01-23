@@ -1,6 +1,10 @@
 // Import all of Bootstrap's CSS
 @import "/node_modules/bootstrap/scss/bootstrap";
 
+body {
+    background-color: rgba(0, 0, 0, 0.019);
+}
+
 h1 {
     text-align: center;
     padding-top: 1rem;
