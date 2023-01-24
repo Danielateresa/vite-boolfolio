@@ -18,7 +18,7 @@ export default {
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav text-uppercase ms-auto mt-2 mt-lg-0">
+                <ul class="navbar-nav text-uppercase text-end ms-auto mt-2 mt-lg-0">
                     <li class="nav-item">
                         <router-link class="nav-link" :to="{ name: 'home' }" aria-current="page">Home <span
                                 class="visually-hidden">(current)</span></router-link>
