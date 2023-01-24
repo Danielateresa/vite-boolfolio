@@ -29,7 +29,7 @@ export default {
                 <!-- sx_column -->
 
                 <div class="col-sm-12 col-md-8">
-                    <img class="img-fluid" src="../../public/img/Progetto senza titolo.png" alt="">
+                    <img class="img-fluid" src="../../public/img/devices.png" alt="">
                 </div>
                 <!-- dx_column -->
             </div>
