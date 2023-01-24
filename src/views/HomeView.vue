@@ -1,7 +1,10 @@
 <script>
-
+import GitLink from '../components/GitLink.vue'
 export default {
-    name: 'HomeView'
+    name: 'HomeView',
+    components: {
+        GitLink
+    }
 }  
 </script>
 
@@ -13,9 +16,9 @@ export default {
     <div class="devices">
         <div class="container-large bg-white">
             <div class="row px-5 pb-4">
-                <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center">
+                <div class="col-sm-12 col-md-5 d-flex flex-column justify-content-center">
                     <div class="">
-                        <h2 class="fw-bold text-uppercase display-3">Sites and web apps on all devices</h2>
+                        <h2 class="fw-bold text-uppercase py-4">Sites and web apps on all devices</h2>
 
                         <small class="d-block">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vitae! Natus commodi quam
@@ -28,7 +31,7 @@ export default {
                 </div>
                 <!-- sx_column -->
 
-                <div class="col-sm-12 col-md-8">
+                <div class="col-sm-12 col-md-7">
                     <img class="img-fluid" src="../../public/img/devices.png" alt="">
                 </div>
                 <!-- dx_column -->
@@ -90,6 +93,8 @@ export default {
 
     </div>
 
+    <GitLink></GitLink>
+
 </template>
 
 <style lang="scss" scoped>
@@ -101,6 +106,7 @@ h2 {
     text-align: left;
     font-size: 60px;
     color: #fd9c1e;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 .row {
