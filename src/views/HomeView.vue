@@ -1,77 +1,25 @@
 <script>
 import GitLink from '../components/GitLink.vue'
+import AppCarousel from '../components/AppCarousel.vue'
 export default {
     name: 'HomeView',
     components: {
-        GitLink
+        GitLink,
+        AppCarousel
     }
 }  
 </script>
 
 <template>
 
-    <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Hi! I'm Daniela, web developer<span
-            class="text-danger">/&#62;</span></h1>
+    <h1 class="text-center shadow-sm py-5 mb-0"><span class="text-danger">&#60;</span>Hi! I'm Daniela, web
+        developer<span class="text-danger">/&#62;</span></h1>
 
-    <div class="devices">
-        <div class="container-large bg-white">
-            <div class="row px-5 pb-4">
-                <div class="col-sm-12 col-md-5 d-flex flex-column justify-content-center">
-                    <div class="">
-                        <h2 class="fw-bold text-uppercase py-4">Sites and web apps on all devices</h2>
 
-                        <small class="d-block">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vitae! Natus commodi quam
-                            soluta impedit officiis nulla totam libero distinctio expedita placeat ex earum.
-                        </small>
 
-                        <a class="btn btn-danger w-50 mt-5" href="Jumbo action link" role="button">Go to
-                            projects</a>
-                    </div>
-                </div>
-                <!-- sx_column -->
+    <AppCarousel></AppCarousel>
 
-                <div class="col-sm-12 col-md-7">
-                    <img class="img-fluid" src="../../public/img/devices.png" alt="">
-                </div>
-                <!-- dx_column -->
-            </div>
-        </div>
-    </div>
 
-    <div class="languages">
-        <div class="container-large py-5">
-            <div class="row px-5 pb-4">
-
-                <div class="col-sm-12 col-md-6 p-5">
-                    <img class="img-fluid" src="../../public/img/HTML.png" alt="">
-                </div>
-
-                <!-- sx_column -->
-
-                <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center px-5">
-                    <div class="">
-                        <h2 class="fw-bold text-uppercase display-3">Languages I speak</h2>
-
-                        <small class="d-block">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vitae! Natus commodi quam
-                            soluta impedit officiis nulla totam libero distinctio expedita placeat ex earum.
-                        </small>
-                        <hr>
-                        <small class="d-block">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat assumenda saepe autem
-                            aliquam earum deserunt ducimus illum beatae dolores mollitia dicta molestias rerum, adipisci
-                            inventore officia unde eligendi impedit!
-                        </small>
-
-                        <a class="btn btn-danger w-50 mt-5" href="Jumbo action link" role="button">See my
-                            projects</a>
-                    </div>
-                </div>
-                <!-- dx_column -->
-            </div>
-        </div>
-    </div>
 
     <div class="container py-5">
 
