@@ -40,11 +40,11 @@ export default {
             <!-- first frame carousel -->
             <div class="carousel-item">
                 <div class="languages">
-                    <div class="container-large py-5">
+                    <div class="container-large bg-white pt-4 pb-5">
                         <div class="row px-5 pb-4">
 
                             <div class="col-sm-12 col-md-6 p-5">
-                                <img class="img-fluid" src="../../public/img/HTML.png" alt="">
+                                <img class="img-fluid" src="../../public/img/language.png" alt="">
                             </div>
 
                             <!-- sx_column -->
@@ -79,8 +79,34 @@ export default {
             <!-- second frame carousel -->
 
             <div class="carousel-item">
-                <img src="" class="d-block w-100" alt="...">
+                <div class="devices">
+                    <div class="container-large">
+                        <div class="row px-5 pb-4">
+                            <div class="col-sm-12 col-md-5 d-flex flex-column justify-content-center">
+                                <div class="">
+                                    <h2 class="fw-bold text-uppercase py-4">Full-stack developer</h2>
+
+                                    <small class="d-block">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vitae! Natus
+                                        commodi quam
+                                        soluta impedit officiis nulla totam libero distinctio expedita placeat ex earum.
+                                    </small>
+
+                                    <a class="btn btn-danger w-50 mt-5" href="Jumbo action link" role="button">Go to
+                                        projects</a>
+                                </div>
+                            </div>
+                            <!-- sx_column -->
+
+                            <div class="col-sm-12 col-md-7">
+                                <img class="img-fluid" src="../../public/img/lego-stack.png" alt="">
+                            </div>
+                            <!-- dx_column -->
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- third frame carousel -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
@@ -112,9 +138,5 @@ h2 {
 .row {
     max-width: 1400px;
     margin: 0 auto;
-}
-
-.container-large {
-    background-color: #f7e3e5;
 }
 </style>
