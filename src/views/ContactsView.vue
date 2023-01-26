@@ -1,9 +1,13 @@
 <script>
 import axios from 'axios'
 import { store } from '../store'
+import AppFooter from '../components/AppFooter.vue'
 
 export default {
     name: 'ContactsView',
+    components: {
+        AppFooter
+    },
     data() {
         return {
             store,
@@ -111,6 +115,7 @@ export default {
             </form>
         </div>
     </div>
+    <AppFooter></AppFooter>
 </template>
 
 <style lang="scss" scoped>

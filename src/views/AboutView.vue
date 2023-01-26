@@ -1,7 +1,11 @@
 <script>
+import AppFooter from '../components/AppFooter.vue'
 
 export default {
-    name: 'AboutView'
+    name: 'AboutView',
+    components: {
+        AppFooter
+    }
 }  
 </script>
 
@@ -43,7 +47,7 @@ export default {
             <!-- col-8 text -->
         </div>
     </div>
-
+    <AppFooter></AppFooter>
 </template>
 
 <style lang="scss" scoped>

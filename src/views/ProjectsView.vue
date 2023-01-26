@@ -1,10 +1,12 @@
 <script>
 import ProjectList from '../components/ProjectList.vue'
+import AppFooter from '../components/AppFooter.vue'
 
 export default {
     name: 'ProjectsView',
     components: {
-        ProjectList
+        ProjectList,
+        AppFooter
     }
 }  
 </script>
@@ -16,7 +18,7 @@ export default {
     </div>
 
     <ProjectList></ProjectList>
-
+    <AppFooter></AppFooter>
 </template>
 
 <style lang="scss" scoped>

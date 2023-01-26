@@ -1,9 +1,13 @@
 <script>
 import axios from 'axios'
 import { store } from '../store.js'
+import AppFooter from '../components/AppFooter.vue'
 
 export default {
     name: 'SingleProjectView',
+    components: {
+        AppFooter
+    },
     data() {
         return {
             project: null,
@@ -52,7 +56,7 @@ export default {
                         <div class="col-6">
                             <img class="" :src="getImg(project.cover_img)" alt="">
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 description">
                             <p>{{ project.description }}</p>
                             <div class="type">
                                 <h4>Project details</h4>
@@ -76,6 +80,7 @@ export default {
                                 </div>
                             </div>
                         </div>
+                        <!-- description -->
                     </div>
                 </div>
 
@@ -84,6 +89,7 @@ export default {
         </div>
     </div>
 
+    <AppFooter></AppFooter>
 </template>
 
 <style lang="scss" scoped>
