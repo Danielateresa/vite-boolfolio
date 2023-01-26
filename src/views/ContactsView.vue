@@ -2,11 +2,13 @@
 import axios from 'axios'
 import { store } from '../store'
 import AppFooter from '../components/AppFooter.vue'
+import GitLink from '../components/GitLink.vue'
 
 export default {
     name: 'ContactsView',
     components: {
-        AppFooter
+        AppFooter,
+        GitLink
     },
     data() {
         return {
@@ -116,6 +118,7 @@ export default {
         </div>
     </div>
     <AppFooter></AppFooter>
+    <GitLink></GitLink>
 </template>
 
 <style lang="scss" scoped>

@@ -39,13 +39,15 @@ export default {
         <div class="card border-0 rounded-0 rounded-bottom shadow-sm">
 
             <img class="card-image" :src="getImg(project.cover_img)" alt="">
-            <div class="card-body">
+            <div class="card-body py-2">
                 <h4 class="title">{{ project.title }}</h4>
                 <div v-if="project.description != null">
-                    <p>{{ trimDescription(project.description ) }}</p>
+                    <p class="text-muted">{{ trimDescription(project.description ) }}</p>
                 </div>
             </div>
-            <div class="card-footer bg-dark text-muted">
+            <!-- card-body -->
+
+            <div class="card-footer text-muted border-0">
                 <div class="type">
                     <strong>Project type: </strong>
                     <span v-if="project.type">
@@ -53,6 +55,7 @@ export default {
                     </span>
                     <span v-else>no type</span>
                 </div>
+                <!-- type -->
 
                 <div class="technologies">
                     <strong>Technologies: </strong>
@@ -63,6 +66,7 @@ export default {
                     </template>
                     <template v-else>no technologies added</template>
                 </div>
+                <!-- technologies -->
 
                 <router-link class="show nav-link fw-bold fs-6 pt-3"
                     :to="{ name: 'singleproject', params: { slug: project.slug } }">Show <svg
@@ -72,7 +76,9 @@ export default {
                         <path
                             d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                     </svg></router-link>
+                <!-- Show link -->
             </div>
+            <!-- card-footer -->
         </div>
     </div>
 </template>
@@ -86,7 +92,7 @@ export default {
     width: fit-content;
 
     &:hover {
-        color: white;
+        color: #fd9c1e;
     }
 }
 

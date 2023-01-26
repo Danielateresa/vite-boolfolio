@@ -44,6 +44,10 @@ export default {
 
 <style lang="scss" scoped>
 footer {
+    h3 {
+        font-family: 'Source Code Pro', monospace;
+    }
+
     box-shadow: 0 5px 5px 0 #7c6d91 inset;
     background-color: #9c89b6;
 

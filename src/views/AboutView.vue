@@ -1,10 +1,12 @@
 <script>
 import AppFooter from '../components/AppFooter.vue'
+import GitLink from '../components/GitLink.vue'
 
 export default {
     name: 'AboutView',
     components: {
-        AppFooter
+        AppFooter,
+        GitLink
     }
 }  
 </script>
@@ -13,7 +15,7 @@ export default {
     <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Something about me<span
             class="text-danger">/&#62;</span></h1>
 
-    <div class="container pt-5">
+    <div class="container py-5">
         <div class="row">
             <div class="col-4">
                 <img class="avatar" src="../.././public/img/ai.jpg" alt="avatar">
@@ -48,6 +50,7 @@ export default {
         </div>
     </div>
     <AppFooter></AppFooter>
+    <GitLink></GitLink>
 </template>
 
 <style lang="scss" scoped>

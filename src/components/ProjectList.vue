@@ -51,6 +51,7 @@ export default {
             <template v-if="projects && !loading">
                 <div class="row gy-5">
                     <ProjectCard :project="project" v-for="project in projects.data" />
+                    <!-- single project card loop -->
                 </div>
 
                 <nav class="d-flex justify-content-center pt-5" aria-label="Page navigation ">

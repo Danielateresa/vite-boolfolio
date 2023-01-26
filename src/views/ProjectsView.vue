@@ -1,12 +1,14 @@
 <script>
 import ProjectList from '../components/ProjectList.vue'
 import AppFooter from '../components/AppFooter.vue'
+import GitLink from '../components/GitLink.vue'
 
 export default {
     name: 'ProjectsView',
     components: {
         ProjectList,
-        AppFooter
+        AppFooter,
+        GitLink
     }
 }  
 </script>
@@ -19,6 +21,7 @@ export default {
 
     <ProjectList></ProjectList>
     <AppFooter></AppFooter>
+    <GitLink></GitLink>
 </template>
 
 <style lang="scss" scoped>

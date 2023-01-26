@@ -38,10 +38,6 @@ h2 {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-h3 {
-    font-family: 'Source Code Pro', monospace;
-}
-
 .row {
     max-width: 1400px;
     margin: 0 auto;
