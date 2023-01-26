@@ -23,8 +23,8 @@ export default {
                                         soluta impedit officiis nulla totam libero distinctio expedita placeat ex earum.
                                     </small>
 
-                                    <a class="btn btn-danger w-50 mt-5" href="Jumbo action link" role="button">Go to
-                                        projects</a>
+                                    <router-link class="btn btn-danger w-50 mt-5" :to="{ name: 'projects' }">Go to
+                                        projects</router-link>
                                 </div>
                             </div>
                             <!-- sx_column -->
@@ -67,8 +67,8 @@ export default {
                                         inventore officia unde eligendi impedit!
                                     </small>
 
-                                    <a class="btn btn-danger w-50 mt-5" href="Jumbo action link" role="button">See my
-                                        projects</a>
+                                    <router-link class="btn btn-danger w-50 mt-5" :to="{ name: 'about' }">More about
+                                        be</router-link>
                                 </div>
                             </div>
                             <!-- dx_column -->
@@ -92,8 +92,9 @@ export default {
                                         soluta impedit officiis nulla totam libero distinctio expedita placeat ex earum.
                                     </small>
 
-                                    <a class="btn btn-danger w-50 mt-5" href="Jumbo action link" role="button">Go to
-                                        projects</a>
+                                    <a class="btn btn-danger w-50 mt-5" href="https://github.com/Danielateresa"
+                                        target="_blank" role="button">More on GitHub</a>
+
                                 </div>
                             </div>
                             <!-- sx_column -->
