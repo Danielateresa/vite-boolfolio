@@ -67,10 +67,9 @@ export default {
             class="text-danger">/&#62;</span></h1>
     <div class="container pt-5">
 
-        <p class="pt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptatem suscipit sint?
-            Impedit fuga
-            dolorem delectus porro sed dolorum eius, ullam consequuntur maiores officia voluptatibus nobis facere dolore
-            iusto. Inventore, dignissimos aspernatur? Possimus ad ea libero.</p>
+        <p class="pt-3 text-center">If you have any questions, curiosity, or are interested in working with me, please
+            contact me, I
+            will respond as soon as possible.</p>
 
         <div class="container content py-5">
 

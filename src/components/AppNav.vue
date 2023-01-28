@@ -10,7 +10,7 @@ export default {
 
     <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark shadow-sm">
         <div class="container">
-            <a class="navbar-brand text-uppercase" href="#"><img class="logo" src="../../public/img/logo.png"
+            <a class="navbar-brand text-uppercase" href="#"><img class="logo" src="../../public/img/dev-logo.png"
                     alt=""></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -43,6 +43,6 @@ export default {
 
 <style lang="scss" scoped>
 .logo {
-    width: 200px;
+    width: 400px;
 }
 </style>

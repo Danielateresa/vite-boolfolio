@@ -38,7 +38,7 @@ export default {
     <div class="col-xs-12 col-sm-6 col-lg-3">
         <div class="card border-0 rounded-0 rounded-bottom shadow-sm">
 
-            <img class="card-image" :src="getImg(project.cover_img)" alt="">
+            <img class="card-image card_shape" :src="getImg(project.cover_img)" alt="">
             <div class="card-body py-2">
                 <h4 class="title">{{ project.title }}</h4>
                 <div v-if="project.description != null">
@@ -90,6 +90,7 @@ export default {
 
 .nav-link {
     width: fit-content;
+    color: #9c89b6;
 
     &:hover {
         color: #fd9c1e;
@@ -104,6 +105,11 @@ export default {
 
     .title {
         color: #fd9c1e;
+    }
+
+    .card_shape {
+        aspect-ratio: 1/1;
+        object-fit: cover;
     }
 }
 </style>
