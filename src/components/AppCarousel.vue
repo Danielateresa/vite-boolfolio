@@ -109,14 +109,16 @@ export default {
             </div>
             <!-- third frame carousel -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        <button class="carousel-control-prev text-muted" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"><font-awesome-icon
+                    icon="fa-solid fa-chevron-left" size="2x" /></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        <button class="carousel-control-next text-muted" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"><font-awesome-icon
+                    icon="fa-solid fa-chevron-right" size="2x" /></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
@@ -139,5 +141,9 @@ h2 {
 .row {
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.violet {
+    color: #7c6d91;
 }
 </style>

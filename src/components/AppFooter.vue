@@ -26,12 +26,7 @@ export default {
 
             </div>
 
-            <p class="w-75 m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, dolore
-                corrupti!
-                Molestias,
-                ipsum
-                magnam. Corrupti nobis at iure et repudiandae explicabo, iste in magnam maiores. Veritatis voluptas
-                culpa, exercitationem amet inventore nobis.</p>
+            <p class="w-75 m-auto text-center fs-4">Follow me on my Linkedin and GitHub accounts</p>
         </div>
         <div class="container bottom_footer text-center">
             <hr class="text-white">
