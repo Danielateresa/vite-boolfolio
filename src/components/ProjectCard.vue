@@ -77,6 +77,11 @@ export default {
                             d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
                     </svg></router-link>
                 <!-- Show link -->
+
+                <p class="d-inline" v-if="project.github_link != null">
+                    <strong>GitHub link: </strong>
+                    <a target="_blank" :href="project.github_link">{{ project.github_link }}</a>
+                </p>
             </div>
             <!-- card-footer -->
         </div>

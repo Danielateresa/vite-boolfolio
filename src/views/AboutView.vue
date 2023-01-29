@@ -16,67 +16,84 @@ export default {
             class="text-danger">/&#62;</span></h1>
 
     <div class="container py-5">
-        <div class="row gx-5">
-            <div class="col-12">
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas repellat fuga doloremque
-                    nihil,
-                    sequi impedit, sed, a veniam quod architecto officia eius blanditiis odio mollitia? Fuga
-                    accusamus
-                    similique eaque amet ex. Maxime praesentium qui neque nesciunt, sunt, cumque ipsam iusto
-                    cupiditate
-                    quos esse ullam aspernatur asperiores exercitationem itaque magni doloremque excepturi corrupti
-                    iure
-                    ducimus et laudantium error dignissimos dolorem nostrum? Asperiores optio, ipsa esse odio
-                    tempore
-                    distinctio! Officia, numquam esse! Facilis incidunt consequuntur laborum et commodi nesciunt,
-                    recusandae eligendi beatae quae quis laudantium, fugiat omnis hic ea aspernatur voluptas
-                    suscipit
-                    dignissimos ullam iure exercitationem. Ab numquam libero iure sit omnis?</p>
+        <div class="row row-cols-1 row-cols-md-2 gx-5 text-muted">
+            <div class="col">
+                <div class="heading">
+                    <h2 class="d-inline text-danger fw-bold">Hi!</h2>
+                    <p class="d-inline"><span class="fw-bold text-muted">I'm Daniela, full-stack web
+                            developer.</span></p>
+                </div>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas repellat fuga doloremque
-                    nihil,
-                    sequi impedit, sed, a veniam quod architecto officia eius blanditiis odio mollitia? Fuga
-                    accusamus
-                    similique eaque amet ex. Maxime praesentium qui neque nesciunt, sunt.</p>
-
-                <span class="signature">Daniela</span>
+                <p class="py-5">My passion for the web and coding started many years ago, when I found myself creating
+                    my first
+                    showcase site due to work requirements.
+                    My studies in art and multimedia graphics made my curiosity grow to explore and deepen what lies
+                    behind the construction of websites and web apps, and as soon as I had the chance, I decided that
+                    this would be my future.
+                    I love combining coding and web design, and using colours to express myself.
+                </p>
+                <p>
+                    The training and experience gained in <span class="fw-bold fs-6">Boolean</span>, through 6 months
+                    full-time, has allowed
+                    me to create
+                    many projects using different technologies and programming languages, starting with the basics of
+                    <span class="fw-bold text-danger">HTML</span>, <span class="fw-bold text-primary">CSS</span> and
+                    <span class="fw-bold text-violet">Bootstrap</span>, and then evolving into increasingly complex
+                    challenges,
+                    using
+                    <span class="fw-bold text-warning">Javascript</span>,
+                    <span class="fw-bold text-success">Vue.</span><span class="fw-bold text-muted">Js</span>, <span
+                        class="fw-bold text-violet">Vite</span>,
+                    <span class="fw-bold text-primary">PhP</span>, <span class="fw-bold text-orange">Laravel</span>,
+                    <span class="fw-bold text-violet">php</span><span class="fw-bold text-orange">MyAdmin</span>,
+                    <span class="fw-bold text-muted">SQL</span>.
+                </p>
             </div>
-            <!-- col-8 text -->
-            <div class="col-12 pb-5">
-                <div class="row row-cols-sm-2 row-cols-md-4 pt-4 g-3 g-md-5 w-75">
-                    <div class="col position-relative">
-                        <div class="frame">
-                            <img class="img-fluid rounded_img mx-auto d-block" src="../.././public/img/ai.jpg"
-                                alt="avatar">
-                            <small class="img_desc">my avatar</small>
-                        </div>
+            <div class="col">
+                <img class="img-fluid d-block" src="../../public/img/tetris.png" alt="avatar">
+                <p>My hobbies are many: I like reading, watching series upon series, I love animals, being surrounded
+                    by greenery, but I also love technology.
+                    VR is a world that fascinates me, in fact, as soon as I have some free time I like to play Beat
+                    Saber for Oculus.</p>
+            </div>
+        </div>
+        <div class="container w-100">
+            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 pt-4 g-5">
+                <div class="col position-relative">
+                    <div class="frame">
+                        <img class="img-fluid rounded_img mx-auto d-block" src="../../public/img/ai.jpg" alt="avatar">
+                        <small class="img_desc">my avatar</small>
                     </div>
-                    <div class="col position-relative">
-                        <div class="frame">
-                            <img class="img-fluid rounded_img square mx-auto d-block"
-                                src="../.././public/img/immagineprofilo.jpeg" alt="rounded_img">
-                            <small class="img_desc">that's me</small>
-                        </div>
+                </div>
+                <div class="col position-relative">
+                    <div class="frame">
+                        <img class="img-fluid rounded_img square mx-auto d-block"
+                            src="../../public/img/immagineprofilo.jpeg" alt="rounded_img">
+                        <small class="img_desc">that's me</small>
                     </div>
-                    <div class="col position-relative">
-                        <div class="frame">
-                            <img class="img-fluid rounded_img square mx-auto d-block"
-                                src="../.././public/img/beat-sabe.jpg" alt="rounded_img">
-                            <small class="img_desc">beat saber addict</small>
-                        </div>
+                </div>
+                <div class="col position-relative">
+                    <div class="frame">
+                        <img class="img-fluid rounded_img square mx-auto d-block" src="../../public/img/beat-sabe.jpg"
+                            alt="rounded_img">
+                        <small class="img_desc">beat saber addict</small>
                     </div>
-                    <div class="col position-relative">
-                        <div class="frame">
-                            <img class="img-fluid rounded_img square mx-auto d-block"
-                                src="../.././public/img/WhatsApp Image 2023-01-26 at 18.13.31.jpeg" alt="rounded_img">
-                            <small class="img_desc">plant lover</small>
-                        </div>
+                </div>
+                <div class="col position-relative">
+                    <div class="frame">
+                        <img class="img-fluid rounded_img square mx-auto d-block"
+                            src="../../public/img/WhatsApp Image 2023-01-26 at 18.13.31.jpeg" alt="rounded_img">
+                        <small class="img_desc">plant lover</small>
                     </div>
                 </div>
             </div>
+
             <!-- col-3 rounded_img-->
+
         </div>
+        <!--text cols -->
+
+
     </div>
     <AppFooter></AppFooter>
     <GitLink></GitLink>
@@ -86,10 +103,20 @@ export default {
 .row {
     max-width: 1400px;
     margin: 0 auto;
+
+    h2 {
+        font-size: 60px;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    span {
+        font-size: 30px;
+    }
 }
 
 .rounded_img {
     border-radius: 50%;
+    max-width: 200px;
 }
 
 .frame {
@@ -109,7 +136,6 @@ export default {
         }
     }
 
-
     .img_desc {
         position: absolute;
         position: absolute;
@@ -121,16 +147,10 @@ export default {
         color: transparent;
 
     }
-
 }
-
 
 .square {
     aspect-ratio: 1/1;
     object-fit: cover;
-}
-
-.signature {
-    font-family: 'Source Code Pro', monospace;
 }
 </style>

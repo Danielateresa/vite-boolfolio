@@ -53,11 +53,15 @@ export default {
                 <div class="container py-5">
                     <h2 class="ps-4 pb-4 proj_title">{{ project.title }}</h2>
                     <div class="card border-0 p-5 shadow-sm">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="" :src="getImg(project.cover_img)" alt="">
+                        <div class="row row-cols-1 row-cols-md-2">
+                            <div class="col-12 col-md-7">
+                                <div class="img_window">
+                                    <img class="" :src="getImg(project.cover_img)" alt="">
+                                </div>
                             </div>
-                            <div class="col-6 description">
+                            <!-- img -->
+
+                            <div class="col-12 col-md-5 description">
                                 <h2 class="text-muted">Project details</h2>
                                 <div class="type pt-4">
                                     <div v-if="project.type">
@@ -69,6 +73,7 @@ export default {
                                         <h3 class="d-inline">Type: </h3><span>No type added</span>
                                     </div>
                                 </div>
+                                <!-- //type -->
 
                                 <div class="technologies  pt-4">
                                     <div class="d-inline" v-if="project.technologies.length > 0">
@@ -81,9 +86,11 @@ export default {
                                         <h3 class="d-inline">Technologies: </h3><span>No technologies added</span>
                                     </div>
                                 </div>
+                                <!-- //technologies -->
                                 <p class="text-muted pt-4">{{ project.description }}</p>
                             </div>
-                            <!-- description -->
+                            <!-- //description -->
+
                         </div>
                     </div>
                 </div>
@@ -100,6 +107,35 @@ export default {
 .row {
     max-width: 1400px;
     margin: 0 auto;
+
+    .img_window {
+        width: 95%;
+        height: 500px;
+        overflow: auto;
+    }
+
+    /* Track */
+    .img_window::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    .img_window::-webkit-scrollbar-track {
+        border: 1px solid rgb(175, 175, 175);
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    .img_window::-webkit-scrollbar-thumb {
+        background: rgb(175, 175, 175);
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    .img_window::-webkit-scrollbar-thumb:hover {
+        background: #dc3545;
+    }
+
 }
 
 .proj_title {
