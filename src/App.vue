@@ -7,6 +7,9 @@ export default {
     components: {
         AppNav,
     },
+    mounted() {
+        document.title = "Daniela Teresa de Leo - Portfolio";
+    }
 }  
 </script>
 
