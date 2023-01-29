@@ -25,8 +25,8 @@ export default {
          * @param {string} text 
          */
         trimDescription(text) {
-            if (text.length > 50) {
-                return text.slice(0, 50) + '...'
+            if (text.length > 70) {
+                return text.slice(0, 70) + '...'
             }
             return text
         },
@@ -79,7 +79,7 @@ export default {
                     <!-- Show link -->
 
                     <p class="" v-if="project.github_link != null">
-                        <a target="_blank" :href="project.github_link"><strong class="text-muted github">GitHub
+                        <a target="_blank" :href="project.github_link"><strong class="github">GitHub
                                 code</strong></a>
                     </p>
                     <!-- github code link -->
@@ -97,11 +97,6 @@ export default {
 
 .nav-link {
     width: fit-content;
-    color: #9c89b6;
-
-    &:hover {
-        color: #fd9c1e;
-    }
 }
 
 .card {
@@ -117,6 +112,23 @@ export default {
     .card_shape {
         aspect-ratio: 1/1;
         object-fit: cover;
+    }
+
+    .nav-link,
+    .github,
+    a {
+        color: #9c89b6;
+
+        &:hover {
+            color: #fd9c1e;
+        }
+    }
+
+    .github,
+    a {
+        &:hover {
+            color: #fd9c1e;
+        }
     }
 }
 </style>

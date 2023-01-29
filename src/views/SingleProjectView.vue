@@ -61,36 +61,44 @@ export default {
                             </div>
                             <!-- img -->
 
-                            <div class="col-12 col-md-5 description">
-                                <h2 class="text-muted">Project details</h2>
-                                <div class="type pt-4">
-                                    <div v-if="project.type">
-                                        <h3 class="d-inline text-muted">Type: </h3><span class="language_tags">{{
-                                            project.type.name
-                                        }}</span>
+                            <div class="col-12 col-md-5 d-flex flex-column description">
+                                <div class="top">
+                                    <h2 class="text-muted">Project details</h2>
+                                    <div class="type pt-4">
+                                        <div v-if="project.type">
+                                            <h3 class="d-inline text-muted">Type: </h3><span class="language_tags">{{
+                                                project.type.name
+                                            }}</span>
+                                        </div>
+                                        <div v-else>
+                                            <h3 class="d-inline">Type: </h3><span>No type added</span>
+                                        </div>
                                     </div>
-                                    <div v-else>
-                                        <h3 class="d-inline">Type: </h3><span>No type added</span>
-                                    </div>
-                                </div>
-                                <!-- //type -->
+                                    <!-- //type -->
 
-                                <div class="technologies  pt-4">
-                                    <div class="d-inline" v-if="project.technologies.length > 0">
-                                        <h3 class="d-inline text-muted">Technologies: </h3>
-                                        <span class="language_tags" v-for="technology in project.technologies">
-                                            #{{ technology.name }}
-                                        </span>
+                                    <div class="technologies  pt-4">
+                                        <div class="d-inline" v-if="project.technologies.length > 0">
+                                            <h3 class="d-inline text-muted">Technologies: </h3>
+                                            <span class="language_tags" v-for="technology in project.technologies">
+                                                #{{ technology.name }}
+                                            </span>
+                                        </div>
+                                        <div v-else>
+                                            <h3 class="d-inline">Technologies: </h3><span>No technologies added</span>
+                                        </div>
                                     </div>
-                                    <div v-else>
-                                        <h3 class="d-inline">Technologies: </h3><span>No technologies added</span>
-                                    </div>
+                                    <!-- //technologies -->
+                                    <p class="text-muted pt-4">{{ project.description }}</p>
                                 </div>
-                                <!-- //technologies -->
-                                <p class="text-muted pt-4">{{ project.description }}</p>
+
+                                <div class="bottom mt-auto" v-if="project.github_link != null">
+                                    <a target="_blank" :href="project.github_link"><strong class="github">GitHub
+                                            code</strong></a>
+                                </div>
+                                <!-- github code link -->
+
+                                <!-- //description -->
                             </div>
-                            <!-- //description -->
-
                         </div>
                     </div>
                 </div>
@@ -143,11 +151,20 @@ export default {
     font-size: 50px;
 }
 
-.language_tags {
+.language_tags,
+.github,
+a {
     color: #9c89b6;
 }
 
 img {
     width: 100%;
+}
+
+.github,
+a {
+    &:hover {
+        color: #fd9c1e;
+    }
 }
 </style>
