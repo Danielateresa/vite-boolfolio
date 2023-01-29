@@ -42,7 +42,7 @@ export default {
             <div class="card-body py-2">
                 <h4 class="title">{{ project.title }}</h4>
                 <div v-if="project.description != null">
-                    <p class="text-muted">{{ trimDescription(project.description ) }}</p>
+                    <small class="text-muted">{{ trimDescription(project.description ) }}</small>
                 </div>
             </div>
             <!-- card-body -->
@@ -67,21 +67,23 @@ export default {
                     <template v-else>no technologies added</template>
                 </div>
                 <!-- technologies -->
+                <div class="d-flex justify-content-between pt-3">
+                    <router-link class="show nav-link fw-bold fs-6"
+                        :to="{ name: 'singleproject', params: { slug: project.slug } }">Show <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-eye-fill" viewBox="0 0 16 16">
+                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                            <path
+                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                        </svg></router-link>
+                    <!-- Show link -->
 
-                <router-link class="show nav-link fw-bold fs-6 pt-3"
-                    :to="{ name: 'singleproject', params: { slug: project.slug } }">Show <svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-eye-fill" viewBox="0 0 16 16">
-                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
-                        <path
-                            d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
-                    </svg></router-link>
-                <!-- Show link -->
-
-                <p class="d-inline" v-if="project.github_link != null">
-                    <strong>GitHub link: </strong>
-                    <a target="_blank" :href="project.github_link">{{ project.github_link }}</a>
-                </p>
+                    <p class="" v-if="project.github_link != null">
+                        <a target="_blank" :href="project.github_link"><strong class="text-muted github">GitHub
+                                code</strong></a>
+                    </p>
+                    <!-- github code link -->
+                </div>
             </div>
             <!-- card-footer -->
         </div>
