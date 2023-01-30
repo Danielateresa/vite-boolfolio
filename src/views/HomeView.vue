@@ -15,7 +15,7 @@ export default {
 
 <template>
 
-    <h1 class="text-center shadow-sm py-5 mb-0"><span class="text-danger">&#60;</span>Hi! I'm Daniela, web
+    <h1 class="text-center shadow-sm py-5 mb-0"><span class="text-danger">&#60;</span>Ciao! Sono Daniela, web
         developer<span class="text-danger">/&#62;</span></h1>
 
 

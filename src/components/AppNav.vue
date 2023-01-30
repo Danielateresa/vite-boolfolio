@@ -20,7 +20,7 @@ export default {
             <div class="collapse navbar-collapse bg-dark bg-opacity-50 rounded mt-2" id="collapsibleNavId">
                 <ul class="navbar-nav text-uppercase text-end ms-auto mt-lg-0">
                     <li class="nav-item">
-                        <router-link class="nav-link" :to="{ name: 'home' }" aria-current="page">Home <span
+                        <router-link class="nav-link" :to="{ name: 'home' }" aria-current="page">Home<span
                                 class="visually-hidden">(current)</span></router-link>
                     </li>
 
@@ -28,10 +28,10 @@ export default {
                         <router-link class="nav-link" :to="{ name: 'about' }">About</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :to="{ name: 'projects' }">Projects</router-link>
+                        <router-link class="nav-link" :to="{ name: 'projects' }">Lavori</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" :to="{ name: 'contacts' }">Contacts</router-link>
+                        <router-link class="nav-link" :to="{ name: 'contacts' }">Contatti</router-link>
                     </li>
                 </ul>
             </div>

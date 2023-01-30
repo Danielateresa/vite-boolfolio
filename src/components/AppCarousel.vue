@@ -15,12 +15,16 @@ export default {
                         <div class="row px-5 pb-4">
                             <div class="col-sm-12 col-md-5 d-flex flex-column justify-content-center">
                                 <div class="">
-                                    <h2 class="fw-bold text-uppercase py-4">Sites and web apps on all devices</h2>
+                                    <h2 class="fw-bold text-uppercase py-4">Siti e web app responsive su ogni device
+                                    </h2>
 
                                     <small class="d-block">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vitae! Natus
-                                        commodi quam
-                                        soluta impedit officiis nulla totam libero distinctio expedita placeat ex earum.
+                                        Realizzare un sito we o un'applicazione adattabile a diversi device è oggi
+                                        fonamentale per restare al passo con la tecnologia ed essere sempre competitivi.
+                                        Attraverso diversi strumenti e tecnologie, ho realizzato diversi progetti
+                                        responsive, che mantengono le proprie funzionalità e rispettano una linea
+                                        estetica pur essendo visualizzati su diversi formati, consentendo all'utente di
+                                        avere un'esperienza completa e versatile.
                                     </small>
 
                                     <router-link class="btn btn-danger w-50 mt-5" :to="{ name: 'projects' }">Go to
@@ -51,20 +55,20 @@ export default {
 
                             <div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center px-5">
                                 <div class="">
-                                    <h2 class="fw-bold text-uppercase display-3">Languages I speak</h2>
+                                    <h2 class="fw-bold text-uppercase display-3">Ogni linguaggio è una grande
+                                        opportunita'</h2>
 
                                     <small class="d-block">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vitae! Natus
-                                        commodi quam
-                                        soluta impedit officiis nulla totam libero distinctio expedita placeat ex earum.
+                                        Durante la mia formazione ho acquisito conoscenze su diversi linguaggi
+                                        appartenenti sia allo sviluppo web front-end che back-end.
                                     </small>
                                     <hr>
                                     <small class="d-block">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat assumenda
-                                        saepe autem
-                                        aliquam earum deserunt ducimus illum beatae dolores mollitia dicta molestias
-                                        rerum, adipisci
-                                        inventore officia unde eligendi impedit!
+                                        Entrambi gli aspetti di questo mondo mi affascinano, sembrano opposti ma spesso
+                                        si completano e contaminano a vicenda, per questo sono sempre curiosa
+                                        nell'apprendere nuovi linguaggi appartenenti alla programmazione. Segui il link
+                                        per scoprire qualcosa in
+                                        più su di me.
                                     </small>
 
                                     <router-link class="btn btn-danger w-50 mt-5" :to="{ name: 'about' }">More about
@@ -87,9 +91,10 @@ export default {
                                     <h2 class="fw-bold text-uppercase py-4">Full-stack developer</h2>
 
                                     <small class="d-block">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, vitae! Natus
-                                        commodi quam
-                                        soluta impedit officiis nulla totam libero distinctio expedita placeat ex earum.
+                                        I vari progetti da me sviluppati spaziano tra il front-end, la parte visibile e
+                                        interattiva, e il back-end, ciò che dietro le quinte lavora per mostrare e
+                                        gestire i dati. Per
+                                        visionare il codice completo segui pure il link al mio GitHub
                                     </small>
 
                                     <a class="btn btn-danger w-50 mt-5" href="https://github.com/Danielateresa"

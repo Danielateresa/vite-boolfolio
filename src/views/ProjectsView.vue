@@ -15,7 +15,7 @@ export default {
 
 <template>
     <div>
-        <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>My projects<span
+        <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>I miei progetti web<span
                 class="text-danger">/&#62;</span></h1>
     </div>
 

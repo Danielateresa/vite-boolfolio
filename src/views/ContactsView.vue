@@ -63,13 +63,14 @@ export default {
 
 <template>
 
-    <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Contact me<span
+    <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Contatti<span
             class="text-danger">/&#62;</span></h1>
     <div class="container pt-5">
 
-        <p class="pt-3 text-center">If you have any questions, curiosity, or are interested in working with me, please
-            contact me, I
-            will respond as soon as possible.</p>
+        <p class="pt-3 text-center">Per qualsiasi domanda, curiosità sul mio lavoro, o se sei interessato a lavorare con
+            me, contattami pure.
+            Risponderò al più presto.
+        </p>
 
         <div class="container content py-5">
 
@@ -79,19 +80,19 @@ export default {
 
             <form @submit.prevent="sendForm()">
                 <div class="mb-3">
-                    <label for="" class="form-label">Name</label>
+                    <label for="" class="form-label">Nome</label>
                     <input type="text" name="" id="" v-model="name" class="form-control" placeholder=""
                         aria-describedby="NameHelper">
                     <p v-for="(error) in errors.name" class="text-danger">{{ error }}</p>
-                    <small id="NameHelper" class="text-muted">Add your name</small>
+                    <small id="NameHelper" class="text-muted">Il tuo nome</small>
                 </div>
 
                 <div class="mb-3">
-                    <label for="" class="form-label">Surname</label>
+                    <label for="" class="form-label">Cognome</label>
                     <input type="text" name="" id="" v-model="surname" class="form-control" placeholder=""
                         aria-describedby="SurnameHelper">
                     <p v-for="(error) in errors.surname" class="text-danger">{{ error }}</p>
-                    <small id="SurnameHelper" class="text-muted">Add your surname</small>
+                    <small id="SurnameHelper" class="text-muted">Il tuo cognome</small>
                 </div>
 
                 <div class="mb-3">
@@ -99,11 +100,11 @@ export default {
                     <input type="email" name="" id="" v-model="email" class="form-control" placeholder=""
                         aria-describedby="emailHelper">
                     <p v-for="(error) in errors.email" class="text-danger">{{ error }}</p>
-                    <small id="emailHelper" class="text-muted">Add your email</small>
+                    <small id="emailHelper" class="text-muted">La tua email</small>
                 </div>
 
                 <div class="mb-3">
-                    <label for="" class="form-label">Message</label>
+                    <label for="" class="form-label">Messaggio</label>
                     <textarea class="form-control" name="" id="" v-model="message" rows="4"></textarea>
                     <p v-for="(error) in errors.message" class="text-danger">{{ error }}</p>
                 </div>

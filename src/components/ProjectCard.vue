@@ -49,27 +49,27 @@ export default {
 
             <div class="card-footer text-muted border-0">
                 <div class="type">
-                    <strong>Project type: </strong>
+                    <strong>Tipologia: </strong>
                     <span v-if="project.type">
                         {{ project.type.name }}
                     </span>
-                    <span v-else>no type</span>
+                    <span v-else>Nessuna tipologia aggiunta</span>
                 </div>
                 <!-- type -->
 
                 <div class="technologies">
-                    <strong>Technologies: </strong>
+                    <strong>Technologie utilizzate: </strong>
                     <template v-if="project.technologies.length > 0">
                         <span v-for="technology in project.technologies">
                             #{{ technology.name }}
                         </span>
                     </template>
-                    <template v-else>no technologies added</template>
+                    <template v-else>Nessuna tecnologia aggiunta</template>
                 </div>
                 <!-- technologies -->
                 <div class="d-flex justify-content-between pt-3">
                     <router-link class="show nav-link fw-bold fs-6"
-                        :to="{ name: 'singleproject', params: { slug: project.slug } }">Show <svg
+                        :to="{ name: 'singleproject', params: { slug: project.slug } }"><svg
                             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-eye-fill" viewBox="0 0 16 16">
                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
@@ -79,8 +79,7 @@ export default {
                     <!-- Show link -->
 
                     <p class="" v-if="project.github_link != null">
-                        <a target="_blank" :href="project.github_link"><strong class="github">GitHub
-                                code</strong></a>
+                        <a target="_blank" :href="project.github_link"><strong class="github">GitHub</strong></a>
                     </p>
                     <!-- github code link -->
                 </div>

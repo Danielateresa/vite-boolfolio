@@ -46,7 +46,7 @@ export default {
 
 <template>
     <div>
-        <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Project details<span
+        <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Dettagli progetto<span
                 class="text-danger">/&#62;</span></h1>
         <div class="container pt-3">
             <div v-if="project">
@@ -63,28 +63,30 @@ export default {
 
                             <div class="col-12 col-md-5 d-flex flex-column description">
                                 <div class="top">
-                                    <h2 class="text-muted">Project details</h2>
+                                    <h2 class="text-muted">Info progetto</h2>
                                     <div class="type pt-4">
                                         <div v-if="project.type">
-                                            <h3 class="d-inline text-muted">Type: </h3><span class="language_tags">{{
-                                                project.type.name
-                                            }}</span>
+                                            <h3 class="d-inline text-muted">Tipologia: </h3><span
+                                                class="language_tags">{{
+                                                    project.type.name
+                                                }}</span>
                                         </div>
                                         <div v-else>
-                                            <h3 class="d-inline">Type: </h3><span>No type added</span>
+                                            <h3 class="d-inline">Tipologie: </h3><span>Nessuna tipologia aggiunta</span>
                                         </div>
                                     </div>
                                     <!-- //type -->
 
                                     <div class="technologies  pt-4">
                                         <div class="d-inline" v-if="project.technologies.length > 0">
-                                            <h3 class="d-inline text-muted">Technologies: </h3>
+                                            <h3 class="d-inline text-muted">Technologie: </h3>
                                             <span class="language_tags" v-for="technology in project.technologies">
                                                 #{{ technology.name }}
                                             </span>
                                         </div>
                                         <div v-else>
-                                            <h3 class="d-inline">Technologies: </h3><span>No technologies added</span>
+                                            <h3 class="d-inline">Technologie: </h3><span>Nessuna tecnologia
+                                                aggiunta</span>
                                         </div>
                                     </div>
                                     <!-- //technologies -->

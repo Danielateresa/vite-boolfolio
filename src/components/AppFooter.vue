@@ -11,7 +11,7 @@ export default {
     <footer class="pb-3">
         <div class="container social py-5">
 
-            <h3 class="text-center text-light">Follow me on...</h3>
+            <h3 class="text-center text-light">Seguimi su...</h3>
             <div class="text-center py-5 d-flex justify-content-center gap-5">
                 <div class="square d-flex align-items-center justify-content-center">
                     <a href="https://www.linkedin.com/in/daniela-teresa-de-leo-5b506122a/" target="_blank">
@@ -26,7 +26,7 @@ export default {
 
             </div>
 
-            <p class="w-75 m-auto text-center fs-4">Follow me on my Linkedin and GitHub accounts</p>
+            <p class="w-75 m-auto text-center fs-4">Per saperne di più segui i miei profili Linkedin e GitHub.</p>
         </div>
         <div class="container bottom_footer text-center">
             <hr class="text-white">

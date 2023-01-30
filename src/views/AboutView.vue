@@ -12,64 +12,64 @@ export default {
 </script>
 
 <template>
-    <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Something about me<span
+    <h1 class="text-center shadow-sm py-5"><span class="text-danger">&#60;</span>Qualcosa su di me<span
             class="text-danger">/&#62;</span></h1>
 
     <div class="container py-5">
         <div class="row row-cols-1 row-cols-md-2 gx-5 text-muted">
             <div class="col">
                 <div class="heading">
-                    <h2 class="d-inline text-danger fw-bold">Hi!</h2>
-                    <p class="d-inline"><span class="fw-bold text-muted">I'm Daniela, full-stack web
+                    <h2 class="d-inline text-danger fw-bold">Ciao!</h2>
+                    <p class="d-inline"><span class="fw-bold text-muted">Sono Daniela, full-stack web
                             developer.</span></p>
                 </div>
 
-                <p class="py-5">My passion for the web and coding started many years ago, when I found myself creating
-                    my first
-                    showcase site due to work requirements.
-                    My studies in art and multimedia graphics made my curiosity grow to explore and deepen what lies
-                    behind the construction of websites and web apps, and as soon as I had the chance, I decided that
-                    this would be my future.
-                    I love combining coding and web design, and using colours to express myself.
+                <p class="py-5">La mia passione per il web e il coding è iniziata molti anni fa, quando mi sono trovata
+                    a creare il mio primo sito vetrina per esigenze di lavoro.
+                    I miei studi di arte e grafica multimediale hanno fatto crescere in me la curiosità di esplorare e
+                    approfondire ciò che si cela dietro la costruzione di siti e applicazioni web.
+                    Non appena ne ho avuto la possibilità, ho deciso quindi che questo sarebbe stato il mio futuro.
+                    Mi piace unire il coding al web design e usare i colori per esprimermi.
+
                 </p>
                 <p>
-                    The training and experience gained in <span class="fw-bold fs-6">Boolean</span>, through 6 months
-                    full-time, has allowed
-                    me to create
-                    many projects using different technologies and programming languages, starting with the basics of
-                    <span class="fw-bold text-danger">HTML</span>, <span class="fw-bold text-primary">CSS</span> and
-                    <span class="fw-bold text-violet">Bootstrap</span>, and then evolving into increasingly complex
-                    challenges,
-                    using
+                    La formazione e l'esperienza maturate in <span class="fw-bold fs-6">Boolean</span>, attraverso 6
+                    mesi
+                    full-time, mi hanno permesso di creare molti progetti utilizzando diverse tecnologie e linguaggi di
+                    programmazione, a partire dalle basi di
+                    <span class="fw-bold text-danger">HTML</span>, <span class="fw-bold text-primary">CSS</span> e
+                    <span class="fw-bold text-violet">Bootstrap</span>, evolute poi in sfide sempre più complesse
+                    attraverso
                     <span class="fw-bold text-warning">Javascript</span>,
                     <span class="fw-bold text-success">Vue.</span><span class="fw-bold text-muted">Js</span>, <span
                         class="fw-bold text-violet">Vite</span>,
                     <span class="fw-bold text-primary">PhP</span>, <span class="fw-bold text-orange">Laravel</span>,
                     <span class="fw-bold text-violet">php</span><span class="fw-bold text-orange">MyAdmin</span>,
-                    <span class="fw-bold text-muted">SQL</span>.
+                    <span class="fw-bold text-muted">MySQL</span>.
                 </p>
             </div>
             <div class="col">
                 <img class="img-fluid d-block" src="../../public/img/tetris.png" alt="avatar">
-                <p>My hobbies are many: I like reading, watching series upon series, I love animals, being surrounded
-                    by greenery, but I also love technology.
-                    VR is a world that fascinates me, in fact, as soon as I have some free time I like to play Beat
-                    Saber for Oculus.</p>
+                <p>I miei hobby sono molti: Mi piace leggere, guardare serie TV, amo gli animali ed essere circondata
+                    dal verde e dagli amici.
+                    Quando ho del tempo libero mi piace, inoltre, giocare in VR; è un mondo che mi affascina, infatti,
+                    sono un'assidua giocatrice di Beat
+                    Saber per Oculus, che è tra i miei preferiti.</p>
             </div>
         </div>
         <div class="container w-100">
             <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 pt-4 g-5">
                 <div class="col position-relative">
                     <div class="frame">
-                        <img class="img-fluid rounded_img mx-auto d-block" src="../../public/img/ai.jpg" alt="avatar">
-                        <small class="img_desc">my avatar</small>
+                        <img class="img-fluid rounded_img square mx-auto d-block"
+                            src="../../public/img/immagineprofilo.jpeg" alt="rounded_img">
+                        <small class="img_desc">that's me</small>
                     </div>
                 </div>
                 <div class="col position-relative">
                     <div class="frame">
-                        <img class="img-fluid rounded_img square mx-auto d-block"
-                            src="../../public/img/immagineprofilo.jpeg" alt="rounded_img">
-                        <small class="img_desc">that's me</small>
+                        <img class="img-fluid rounded_img mx-auto d-block" src="../../public/img/book.png" alt="book">
+                        <small class="img_desc">book lover</small>
                     </div>
                 </div>
                 <div class="col position-relative">
