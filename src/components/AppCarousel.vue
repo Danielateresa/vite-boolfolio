@@ -15,15 +15,16 @@ export default {
                         <div class="row px-5 pb-4">
                             <div class="col-sm-12 col-md-5 d-flex flex-column justify-content-center">
                                 <div class="">
-                                    <h2 class="fw-bold text-uppercase py-4">Siti e web app responsive su ogni device
+                                    <h2 class="fw-bold text-uppercase py-4">Siti e <br>
+                                        web app responsive
                                     </h2>
 
                                     <small class="d-block">
-                                        Realizzare un sito we o un'applicazione adattabile a diversi device è oggi
+                                        Realizzare un sito web o un'applicazione adattabile a diversi device, è oggi
                                         fonamentale per restare al passo con la tecnologia ed essere sempre competitivi.
-                                        Attraverso diversi strumenti e tecnologie, ho realizzato diversi progetti
-                                        responsive, che mantengono le proprie funzionalità e rispettano una linea
-                                        estetica pur essendo visualizzati su diversi formati, consentendo all'utente di
+                                        Attraverso diversi strumenti e tecnologie, ho realizzato vari progetti
+                                        responsive che mantengono le proprie funzionalità e rispettano una linea
+                                        estetica, pur essendo visualizzati su diversi formati, consentendo all'utente di
                                         avere un'esperienza completa e versatile.
                                     </small>
 
@@ -88,7 +89,7 @@ export default {
                         <div class="row px-5 pb-4">
                             <div class="col-sm-12 col-md-5 d-flex flex-column justify-content-center">
                                 <div class="">
-                                    <h2 class="fw-bold text-uppercase py-4">Full-stack developer</h2>
+                                    <h2 class="fw-bold text-uppercase py-4">Full-stack <br> web developer</h2>
 
                                     <small class="d-block">
                                         I vari progetti da me sviluppati spaziano tra il front-end, la parte visibile e
@@ -140,7 +141,8 @@ h2 {
     text-align: left;
     font-size: 60px;
     color: #fd9c1e;
-    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: bolder;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 .row {
