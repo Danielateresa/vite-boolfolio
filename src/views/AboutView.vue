@@ -24,10 +24,12 @@ export default {
                             developer.</span></p>
                 </div>
 
-                <p class="py-5">La mia passione per il web e il coding è iniziata molti anni fa, quando mi sono trovata
+                <p class="pt-5">La mia <strong>passione per il webe il coding</strong> è iniziata molti anni fa, quando mi sono trovata
                     a creare il mio primo sito vetrina per esigenze di lavoro.
-                    I miei studi di arte e grafica multimediale hanno fatto crescere in me la curiosità di esplorare e
-                    approfondire ciò che si cela dietro la costruzione di siti e applicazioni web.
+                </p>
+                <p>
+                    Gli studi di arte e grafica multimediale hanno fatto crescere in me la curiosità di esplorare e
+                    approfondire ciò che si cela dietro la <strong>costruzione di siti e applicazioni web</strong>.
                     Non appena ne ho avuto la possibilità, ho deciso quindi che questo sarebbe stato il mio futuro.
                     Mi piace unire il coding al web design e usare i colori per esprimermi.
 

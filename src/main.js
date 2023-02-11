@@ -9,7 +9,8 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faLinkedinIn, faGithub, faChevronLeft, faChevronRight)
+library.add(faLinkedinIn, faGithub, faChevronLeft, faChevronRight, faEye)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(router).mount('#app')

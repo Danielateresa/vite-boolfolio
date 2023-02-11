@@ -20,7 +20,7 @@ export default {
                                     </h2>
 
                                     <small class="d-block">
-                                        Realizzare un sito web o un'applicazione adattabile a diversi device, è oggi
+                                        Realizzare un <strong class="text-muted fs-6">sito web</strong> o un'<strong class="text-muted  fs-6">applicazione adattabile a diversi device</strong>, è oggi
                                         fonamentale per restare al passo con la tecnologia ed essere sempre competitivi.
                                         Attraverso diversi strumenti e tecnologie, ho realizzato vari progetti
                                         responsive che mantengono le proprie funzionalità e rispettano una linea
@@ -28,7 +28,7 @@ export default {
                                         avere un'esperienza completa e versatile.
                                     </small>
 
-                                    <router-link class="btn btn-danger w-50 mt-5" :to="{ name: 'projects' }">Go to
+                                    <router-link class="btn btn-danger w-50 mt-5 shadow" :to="{ name: 'projects' }">Go to
                                         projects</router-link>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ export default {
 
                                     <small class="d-block">
                                         Durante la mia formazione ho acquisito conoscenze su diversi linguaggi
-                                        appartenenti sia allo sviluppo web front-end che back-end.
+                                        appartenenti allo <strong class="text-muted fs-6">sviluppo web front-end e back-end</strong>.
                                     </small>
                                     <hr>
                                     <small class="d-block">
@@ -72,7 +72,7 @@ export default {
                                         più su di me.
                                     </small>
 
-                                    <router-link class="btn btn-danger w-50 mt-5" :to="{ name: 'about' }">More about
+                                    <router-link class="btn btn-danger w-50 mt-5 shadow" :to="{ name: 'about' }">More about
                                         be</router-link>
                                 </div>
                             </div>
@@ -92,13 +92,14 @@ export default {
                                     <h2 class="fw-bold text-uppercase py-4">Full-stack <br> web developer</h2>
 
                                     <small class="d-block">
-                                        I vari progetti da me sviluppati spaziano tra il front-end, la parte visibile e
-                                        interattiva, e il back-end, ciò che dietro le quinte lavora per mostrare e
-                                        gestire i dati. Per
-                                        visionare il codice completo segui pure il link al mio GitHub
+                                        I vari progetti da me sviluppati spaziano tra il <strong class="text-muted fs-6">front-end</strong>, la parte visibile e
+                                        interattiva, e il <strong class="text-muted fs-6">back-end</strong>, ciò che dietro le quinte lavora per mostrare e
+                                        gestire i dati. <br>
+                                         Per
+                                        visionare il codice completo dei miei progetti, segui il link al mio GitHub.
                                     </small>
 
-                                    <a class="btn btn-danger w-50 mt-5" href="https://github.com/Danielateresa"
+                                    <a class="btn btn-danger w-50 mt-5 shadow" href="https://github.com/Danielateresa"
                                         target="_blank" role="button">More on GitHub</a>
 
                                 </div>
