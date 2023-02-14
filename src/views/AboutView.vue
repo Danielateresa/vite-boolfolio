@@ -84,7 +84,7 @@ export default {
                 <div class="col position-relative">
                     <div class="frame">
                         <img class="img-fluid rounded_img square mx-auto d-block"
-                            src="../../public/img/WhatsApp Image 2023-01-26 at 18.13.31.jpeg" alt="rounded_img">
+                            src="../../public/img/plants.jpeg" alt="rounded_img">
                         <small class="img_desc">plant lover</small>
                     </div>
                 </div>
