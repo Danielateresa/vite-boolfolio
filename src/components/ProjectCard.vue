@@ -58,7 +58,7 @@ export default {
                 <!-- type -->
 
                 <div class="technologies">
-                    <strong>Technologie utilizzate: </strong>
+                    <strong>Tecnologie utilizzate: </strong>
                     <template v-if="project.technologies.length > 0">
                         <span v-for="technology in project.technologies">
                             #{{ technology.name }}

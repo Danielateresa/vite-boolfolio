@@ -83,7 +83,7 @@ export default {
             </template>
             <!-- finchè non arriva una risposta dalla chiamata mostra un loading -->
 
-            <template v-else>No Projects yet</template>
+            <template v-else>Non ci sono progetti</template>
             <!-- se non ci sono progetti nel db -->
         </div>
     </section>

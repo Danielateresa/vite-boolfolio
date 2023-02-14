@@ -85,7 +85,7 @@ export default {
                                             </span>
                                         </div>
                                         <div v-else>
-                                            <h3 class="d-inline">Technologie: </h3><span>Nessuna tecnologia
+                                            <h3 class="d-inline">Tecnologie: </h3><span>Nessuna tecnologia
                                                 aggiunta</span>
                                         </div>
                                     </div>
