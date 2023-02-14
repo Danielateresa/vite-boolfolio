@@ -79,7 +79,7 @@ export default {
 
                                     <div class="technologies  pt-4">
                                         <div class="d-inline" v-if="project.technologies.length > 0">
-                                            <h3 class="d-inline text-muted">Technologie: </h3>
+                                            <h3 class="d-inline text-muted">Tecnologie: </h3>
                                             <span class="language_tags" v-for="technology in project.technologies">
                                                 #{{ technology.name }}
                                             </span>
